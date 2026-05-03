@@ -1,0 +1,26 @@
+Progetto 3
+
+Implementare e confrontare due diversi algoritmi di classificazione, K-Nearest Neighbors (KNN) e Support Vector Machine (SVM), 
+dopo aver ridotto la dimensionalità del dataset Wine utilizzando la PCA.
+
+1 Data Exploration & Preprocessing
+• Caricamento e Analisi del dataset e fornire un’analisi descrittiva iniziale
+(i.e. df.describe(), df.dtypes)
+• Standardization delle feature (X) per garantire che tutti gli attributi
+abbiano media zero e deviazione standard unitaria
+
+2 Data Dimensionality Reduction
+• Applicare la PCA (Principal Component Analysis) sui dati standardizzati
+• Ridurre la dimensionalit`a a 2 componenti principali (n components=2) per facilitare la visualizzazione
+
+3 Addestramento & Valutazione
+• Inizializzare due modelli:
+1. K-Nearest Neighbors (KNN) con n neighbors=5
+2. Support Vector Machine (SVM) con kernel=’linear’
+• Addestrare entrambi i modelli utilizzando il dataset ridotto a 2 componenti
+• Calcolare e stampare l’Accuracy Score di entrambi i modelli sull’intero set di dati ridotto
+
+4 Analisi & Visualizzazione
+• Generare un grafico con due subplot per confrontare i risultati visivi
+• Plottare i data points colorati in base alla loro classe di appartenenza (target)
+• Visualizzare i decision boundary dei modelli (KNN e SVM)
